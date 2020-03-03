@@ -10,31 +10,21 @@ using System.Windows.Forms;
 
 namespace CHADANI_ACCOUNTING_SOFTWARE
 {
-    public partial class LoginPage : MetroFramework.Forms.MetroForm
+    public partial class AddUserForm : MetroFramework.Forms.MetroForm
     {
-        public LoginPage()
+        public AddUserForm()
         {
             InitializeComponent();
         }
 
-    
-        private void metroLabel1_Click(object sender, EventArgs e)
+        private void AddUserForm_Load(object sender, EventArgs e)
         {
 
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainPage MP = new MainPage();
-            MP.Show();
-
-
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            this.Dispose(); 
+            this.Close(); 
 
         }
     }

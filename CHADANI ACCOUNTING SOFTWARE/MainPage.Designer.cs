@@ -33,15 +33,17 @@
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removeCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -56,9 +58,9 @@
             this.usersToolStripMenuItem,
             this.productsToolStripMenuItem,
             this.ordersToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(884, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(844, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,11 +92,45 @@
             this.customerToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.customerToolStripMenuItem.Text = "Customer";
             // 
+            // addNewCustomerToolStripMenuItem
+            // 
+            this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
+            this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.addNewCustomerToolStripMenuItem.Text = "Add New Customer";
+            // 
+            // listCustomerToolStripMenuItem
+            // 
+            this.listCustomerToolStripMenuItem.Name = "listCustomerToolStripMenuItem";
+            this.listCustomerToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.listCustomerToolStripMenuItem.Text = "List Customer";
+            // 
+            // removeCustomerToolStripMenuItem
+            // 
+            this.removeCustomerToolStripMenuItem.Name = "removeCustomerToolStripMenuItem";
+            this.removeCustomerToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.removeCustomerToolStripMenuItem.Text = "Remove Customer";
+            // 
             // usersToolStripMenuItem
             // 
+            this.usersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listUserToolStripMenuItem,
+            this.addUserToolStripMenuItem});
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.usersToolStripMenuItem.Text = "Users";
+            // 
+            // listUserToolStripMenuItem
+            // 
+            this.listUserToolStripMenuItem.Name = "listUserToolStripMenuItem";
+            this.listUserToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.listUserToolStripMenuItem.Text = "List User";
+            // 
+            // addUserToolStripMenuItem
+            // 
+            this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.addUserToolStripMenuItem.Text = "Add User";
+            this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 
             // productsToolStripMenuItem
             // 
@@ -110,44 +146,28 @@
             // addProductToolStripMenuItem
             // 
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.addProductToolStripMenuItem.Text = "Add Product";
+            this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
             // 
             // addCategoryToolStripMenuItem
             // 
             this.addCategoryToolStripMenuItem.Name = "addCategoryToolStripMenuItem";
-            this.addCategoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCategoryToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.addCategoryToolStripMenuItem.Text = "Add Category";
+            this.addCategoryToolStripMenuItem.Click += new System.EventHandler(this.addCategoryToolStripMenuItem_Click);
             // 
             // listProductsToolStripMenuItem
             // 
             this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.listProductsToolStripMenuItem.Text = "List Products";
             // 
             // removeProductToolStripMenuItem
             // 
             this.removeProductToolStripMenuItem.Name = "removeProductToolStripMenuItem";
-            this.removeProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeProductToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.removeProductToolStripMenuItem.Text = "Remove Product";
-            // 
-            // addNewCustomerToolStripMenuItem
-            // 
-            this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
-            this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addNewCustomerToolStripMenuItem.Text = "Add New Customer";
-            // 
-            // listCustomerToolStripMenuItem
-            // 
-            this.listCustomerToolStripMenuItem.Name = "listCustomerToolStripMenuItem";
-            this.listCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listCustomerToolStripMenuItem.Text = "List Customer";
-            // 
-            // removeCustomerToolStripMenuItem
-            // 
-            this.removeCustomerToolStripMenuItem.Name = "removeCustomerToolStripMenuItem";
-            this.removeCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.removeCustomerToolStripMenuItem.Text = "Remove Customer";
             // 
             // ordersToolStripMenuItem
             // 
@@ -162,8 +182,10 @@
             this.ClientSize = new System.Drawing.Size(884, 476);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MainPage";
-            this.Text = "MainPage";
+            this.Text = "Chadani Traders | Inventroy Management Software 2020 V1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -188,5 +210,7 @@
         private System.Windows.Forms.ToolStripMenuItem listProductsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeProductToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
     }
 }
