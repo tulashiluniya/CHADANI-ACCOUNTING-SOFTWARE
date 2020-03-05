@@ -55,11 +55,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Screens\Branches\AddBranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Branches\AddBranchForm.Designer.cs">
+      <DependentUpon>AddBranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Company Info\CompanyInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Company Info\CompanyInfoForm.Designer.cs">
+      <DependentUpon>CompanyInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Customer\AddCustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\Customer\AddCustomerForm.Designer.cs">
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Database\DatabaseSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Database\DatabaseSetting.Designer.cs">
+      <DependentUpon>DatabaseSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\Product\AddProductCategory.cs">
       <SubType>Form</SubType>
@@ -93,8 +111,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Screens\Branches\AddBranchForm.resx">
+      <DependentUpon>AddBranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Company Info\CompanyInfoForm.resx">
+      <DependentUpon>CompanyInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Customer\AddCustomerForm.resx">
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Database\DatabaseSetting.resx">
+      <DependentUpon>DatabaseSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Product\AddProductCategory.resx">
       <DependentUpon>AddProductCategory.cs</DependentUpon>
@@ -134,5 +161,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

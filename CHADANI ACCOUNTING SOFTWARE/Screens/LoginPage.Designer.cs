@@ -59,21 +59,25 @@
             // 
             // metroButton1
             // 
+            this.metroButton1.BackColor = System.Drawing.Color.Lime;
             this.metroButton1.Location = new System.Drawing.Point(59, 158);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(104, 41);
             this.metroButton1.TabIndex = 3;
             this.metroButton1.Text = "Login";
+            this.metroButton1.UseCustomBackColor = true;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 
+            this.metroButton2.BackColor = System.Drawing.Color.Red;
             this.metroButton2.Location = new System.Drawing.Point(266, 158);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(104, 41);
             this.metroButton2.TabIndex = 4;
             this.metroButton2.Text = "Close";
+            this.metroButton2.UseCustomBackColor = true;
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 

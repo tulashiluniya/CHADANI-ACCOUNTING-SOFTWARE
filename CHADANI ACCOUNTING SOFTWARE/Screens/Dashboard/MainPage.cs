@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CHADANI_ACCOUNTING_SOFTWARE.Screens.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,25 @@ namespace CHADANI_ACCOUNTING_SOFTWARE
         {
             AddProductForm AP = new AddProductForm();
             AP.ShowDialog(); 
+
+        }
+
+        private void addNewCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCustomerForm AC = new AddCustomerForm();
+            AC.ShowDialog(); 
+
+        }
+
+        private void brancheToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void databaseSettingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DatabaseSetting DS = new DatabaseSetting();
+            DS.ShowDialog(); 
 
         }
     }
