@@ -259,6 +259,10 @@
             // 
             this.metroComboBox1.FormattingEnabled = true;
             this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
             this.metroComboBox1.Location = new System.Drawing.Point(170, 257);
             this.metroComboBox1.Name = "metroComboBox1";
             this.metroComboBox1.Size = new System.Drawing.Size(200, 29);
