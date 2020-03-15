@@ -47,8 +47,6 @@
             this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.brancheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.companyInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.databaseSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -195,25 +193,10 @@
             // 
             // brancheToolStripMenuItem
             // 
-            this.brancheToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addBranchToolStripMenuItem,
-            this.listBranchToolStripMenuItem});
             this.brancheToolStripMenuItem.Name = "brancheToolStripMenuItem";
             this.brancheToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.brancheToolStripMenuItem.Text = "Branches";
             this.brancheToolStripMenuItem.Click += new System.EventHandler(this.brancheToolStripMenuItem_Click);
-            // 
-            // addBranchToolStripMenuItem
-            // 
-            this.addBranchToolStripMenuItem.Name = "addBranchToolStripMenuItem";
-            this.addBranchToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.addBranchToolStripMenuItem.Text = "Add Branch";
-            // 
-            // listBranchToolStripMenuItem
-            // 
-            this.listBranchToolStripMenuItem.Name = "listBranchToolStripMenuItem";
-            this.listBranchToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.listBranchToolStripMenuItem.Text = "List Branch";
             // 
             // companyInfoToolStripMenuItem
             // 
@@ -267,8 +250,6 @@
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem brancheToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addBranchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listBranchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem companyInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem databaseSettingToolStripMenuItem;
     }

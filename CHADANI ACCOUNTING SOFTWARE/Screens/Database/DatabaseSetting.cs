@@ -16,5 +16,11 @@ namespace CHADANI_ACCOUNTING_SOFTWARE.Screens.Database
         {
             InitializeComponent();
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Database Setting has been saved successfully!!"); 
+
+        }
     }
 }

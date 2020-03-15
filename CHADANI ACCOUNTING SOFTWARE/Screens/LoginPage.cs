@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Configuration; 
+
 
 namespace CHADANI_ACCOUNTING_SOFTWARE
 {
@@ -15,6 +18,9 @@ namespace CHADANI_ACCOUNTING_SOFTWARE
         public LoginPage()
         {
             InitializeComponent();
+
+
+
         }
 
     
@@ -25,9 +31,14 @@ namespace CHADANI_ACCOUNTING_SOFTWARE
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
+            string str = "Hello";
+
+            appsetting ap = new appsetting();
+            ap.Savesettings(str);
             this.Hide();
-            MainPage MP = new MainPage();
-            MP.Show();
+
+            MainPage mp = new MainPage();
+            mp.Show(); 
 
 
         }

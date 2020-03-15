@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CHADANI_ACCOUNTING_SOFTWARE.Screens.Branches;
 
 namespace CHADANI_ACCOUNTING_SOFTWARE
 {
@@ -47,13 +48,18 @@ namespace CHADANI_ACCOUNTING_SOFTWARE
 
         private void brancheToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            BranchForm BF = new BranchForm();
+            BF.ShowDialog();
+
 
         }
 
         private void databaseSettingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DatabaseSetting DS = new DatabaseSetting();
-            DS.ShowDialog(); 
+            DS.ShowDialog();
+         
+
 
         }
     }

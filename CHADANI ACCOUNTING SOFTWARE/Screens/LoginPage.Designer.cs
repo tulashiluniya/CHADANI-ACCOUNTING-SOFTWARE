@@ -32,8 +32,8 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
+            this.UserTextbox = new MetroFramework.Controls.MetroTextBox();
+            this.PassTextBox = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -81,73 +81,73 @@
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
-            // metroTextBox1
+            // UserTextbox
             // 
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(162, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(186, 62);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(184, 23);
-            this.metroTextBox1.TabIndex = 0;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.UserTextbox.CustomButton.Image = null;
+            this.UserTextbox.CustomButton.Location = new System.Drawing.Point(162, 1);
+            this.UserTextbox.CustomButton.Name = "";
+            this.UserTextbox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.UserTextbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.UserTextbox.CustomButton.TabIndex = 1;
+            this.UserTextbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.UserTextbox.CustomButton.UseSelectable = true;
+            this.UserTextbox.CustomButton.Visible = false;
+            this.UserTextbox.Lines = new string[0];
+            this.UserTextbox.Location = new System.Drawing.Point(186, 62);
+            this.UserTextbox.MaxLength = 32767;
+            this.UserTextbox.Name = "UserTextbox";
+            this.UserTextbox.PasswordChar = '\0';
+            this.UserTextbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.UserTextbox.SelectedText = "";
+            this.UserTextbox.SelectionLength = 0;
+            this.UserTextbox.SelectionStart = 0;
+            this.UserTextbox.ShortcutsEnabled = true;
+            this.UserTextbox.Size = new System.Drawing.Size(184, 23);
+            this.UserTextbox.TabIndex = 0;
+            this.UserTextbox.UseSelectable = true;
+            this.UserTextbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.UserTextbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroTextBox2
-            // 
-            // 
+            // PassTextBox
             // 
             // 
-            this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(162, 1);
-            this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox2.CustomButton.TabIndex = 1;
-            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox2.CustomButton.UseSelectable = true;
-            this.metroTextBox2.CustomButton.Visible = false;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(186, 106);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '*';
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.SelectionLength = 0;
-            this.metroTextBox2.SelectionStart = 0;
-            this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(184, 23);
-            this.metroTextBox2.TabIndex = 2;
-            this.metroTextBox2.UseSelectable = true;
-            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // 
+            this.PassTextBox.CustomButton.Image = null;
+            this.PassTextBox.CustomButton.Location = new System.Drawing.Point(162, 1);
+            this.PassTextBox.CustomButton.Name = "";
+            this.PassTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.PassTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.PassTextBox.CustomButton.TabIndex = 1;
+            this.PassTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.PassTextBox.CustomButton.UseSelectable = true;
+            this.PassTextBox.CustomButton.Visible = false;
+            this.PassTextBox.Lines = new string[0];
+            this.PassTextBox.Location = new System.Drawing.Point(186, 106);
+            this.PassTextBox.MaxLength = 32767;
+            this.PassTextBox.Name = "PassTextBox";
+            this.PassTextBox.PasswordChar = '*';
+            this.PassTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.PassTextBox.SelectedText = "";
+            this.PassTextBox.SelectionLength = 0;
+            this.PassTextBox.SelectionStart = 0;
+            this.PassTextBox.ShortcutsEnabled = true;
+            this.PassTextBox.Size = new System.Drawing.Size(184, 23);
+            this.PassTextBox.TabIndex = 2;
+            this.PassTextBox.UseSelectable = true;
+            this.PassTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.PassTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(425, 236);
-            this.Controls.Add(this.metroTextBox2);
-            this.Controls.Add(this.metroTextBox1);
+            this.Controls.Add(this.PassTextBox);
+            this.Controls.Add(this.UserTextbox);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
@@ -165,8 +165,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
+        private MetroFramework.Controls.MetroTextBox UserTextbox;
+        private MetroFramework.Controls.MetroTextBox PassTextBox;
     }
 }
 

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace CHADANI_ACCOUNTING_SOFTWARE.Screens.Branches
 {
-    public partial class AddBranchForm : MetroFramework.Forms.MetroForm
+    public partial class BranchForm : MetroFramework.Forms.MetroForm
     {
-        public AddBranchForm()
+        public BranchForm()
         {
             InitializeComponent();
+        }
+
+        private void BranchForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
